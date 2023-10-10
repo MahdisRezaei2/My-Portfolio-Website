@@ -1,44 +1,44 @@
 .about__container {
-    grid-template-columns: 3fr 9fr;
-    column-gap: 1.875rem;
+  grid-template-columns: 3fr 9fr;
+  column-gap: 1.875rem;
 }
 
 .about__data {
-    padding: 1.875rem;
-    background-color: var(--container-color);
-    box-shadow: var(--shadow);
-    border-radius: var(--border-radius);
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 1.875rem;
-    align-items: flex-start;
-    position: relative;
+  padding: 1.875rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  align-items: flex-start;
+  position: relative;
 }
 
 .about__data::before {
-    content: '';
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 15px solid var(--container-color);
-    position: absolute;
-    left: -0.93rem;
-    top: 20%;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--container-color);
+  position: absolute;
+  left: -0.93rem;
+  top: 20%;
 }
 
 .about__description {
-    margin-top: 1rem;
-    text-align: justify;
+  margin-top: 1rem;
+  text-align: justify;
 }
 
 .about__skills {
-    row-gap: 1.25rem;
+  row-gap: 1.25rem;
 }
 
 .skills__titles {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 /* .skills__name {
@@ -47,56 +47,57 @@
 } */
 
 .skills__number {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .skills__bar,
 .skills__percentage {
-    height: 7px;
-    border-radius: 0.25rem;
+  height: 7px;
+  border-radius: 0.25rem;
 }
 
 .skills__bar {
-    background-color: #d7d0d0;
+  background-color: #d7d0d0;
 }
 
 .skills__percentage {
-    display: block;
-   
+  display: block;
 }
 
 .development {
-    width: 90%;
-    background-color: #f40ea4;
+  width: 90%;
+  background-color: #f40ea4;
 }
 
 .data__structures {
-    width: 90%;
-    background-color: #ce3b6a;
+  width: 90%;
+  background-color: #ce3b6a;
 }
 
 .database {
-    width: 90%;
-    background-color: #b319d1;
+  width: 90%;
+  background-color: #b319d1;
 }
 
 .about__boxes {
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 1.875rem;
-    margin-top:4.25rem ;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.875rem;
+  margin-top: 4.35rem;
 }
 
-.about__box{
-    display: flex;
-    column-gap:1.5rem; ;
+.about__box {
+  display: flex;
+  column-gap: 1.5rem;
 }
-
 
 .about__icon {
-    font-size: var(--h1-font-size);
-    color: #dedeea;
+  font-size: var(--h1-font-size);
+  color: #dedeea;
 }
 
 .about__title {
-    font-size: 1.875rem;
+  font-size: 1.875rem;
+}
+.about__boxes {
+   margin-left: 200px;
 }

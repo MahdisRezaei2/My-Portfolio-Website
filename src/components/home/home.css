@@ -14,8 +14,8 @@
 
 .home__img {
     margin-bottom: 1.5rem;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    
    
 }
 
@@ -91,4 +91,8 @@
     left: 50%;
     transform: translateX(-50%);
     animation: ani-mouse 2s linear infinite;
+}
+
+.btn{
+    margin-bottom: 65px;
 }

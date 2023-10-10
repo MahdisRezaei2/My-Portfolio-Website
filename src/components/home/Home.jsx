@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section className="home container" id="home">
       <div className="intro">
-        <img src={Me} className="home__img"></img>
+        <img src={Me} className="home__img" ></img>
         <h1 className="home__name">Mahdis Rezaei Tamijani</h1>
         <span className="home__education">
           Recently Graduated with Associate degree in Computer Sience from
