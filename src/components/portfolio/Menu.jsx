@@ -2,13 +2,13 @@ import Work1 from "../../assests/work-1.png";
 import Work2 from "../../assests/work-2.png";
 import Work3 from "../../assests/work-3.png";
 import Work4 from "../../assests/work-4.png";
-import React from "react";
+
 const Data = [
   {
     id: 1,
     image: Work1,
     title: "Full Calendar and Schedular React Web Application",
-    category: "Web",
+    category: "Web1",
   },
 
   {
@@ -33,4 +33,4 @@ const Data = [
   },
 ];
 
-export default Menu;
+export default Data;

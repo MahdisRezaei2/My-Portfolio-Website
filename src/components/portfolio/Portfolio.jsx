@@ -3,34 +3,41 @@ import "./portfolio.css";
 import Menu from "./Menu";
 
 const Portfolio = () => {
-  const [items, setItems]= useState(Menu);
+const [items, setItems]= useState(Menu);
+const filterItem = (categoryItem) => {
+  const updatedItems = Menu.filter((curElem)=>{
+    return curElem.category === categoryItem;
+  })
+
+  setItems(updatedItems);
+}
+//const items = Menu;
   return (
 
     <section className="work container section" id="work">
       <h2 className="section__title">Projects</h2>
 
       <div className="work__filters">
-        <span className="work__item">
-          Full Calendar and Schedular React Web Application (Using React,
-          JavaScript, Local Storage,Rest-ful APIs, MongoDB)
+      <span className="work__item" onClick={() => setItems(Menu)}>
+          Everything
         </span>
-        <span className="work__item">
-          To-Do List Web Application (Using React, JavaScript, Redux, Local
-          Storage)
+        <span className="work__item" onClick={() => filterItem("Web1")}>
+          React Project
         </span>
-        <span className="work__item">
-          Database Web Application for Real State Management (Using MySQL, PHP,
-          HTML, CSS)
+        <span className="work__item" onClick={() => filterItem("Database")}>
+        Database Project
         </span>
-        <span className="work__item">
-          Fitness Goal Tracker Web Application (Using Agile software
-          development)
+        <span className="work__item" onClick={() => filterItem("Web2")}>
+          React Project
+        </span>
+        <span className="work__item" onClick={() => filterItem("web3")}>
+          Web programming (Agile) Project
         </span>
       </div>
 
       <div className="work__container grid">
         {items.map((elem) => {
-          const{id, image, title, category}= elem;
+          const{ id, image, title, category}= elem;
           return (
             <div className="work__card" key={id}>
               <div className="work__thumbnail">
@@ -40,7 +47,7 @@ const Portfolio = () => {
 
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
-              <a href="#" className="work__button">
+              <a href="https://mahdisrezaei2.github.io/Calendar-React-Project-1/" className="work__button">
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>
