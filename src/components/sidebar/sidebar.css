@@ -2,7 +2,8 @@
   position: fixed;
   left: 0;
   top: 0;
-  background: var(--body-color);
+  /* background: var(--body-color); */
+  /* background-color: rgba(242, 162, 206, 0.992); */
   border-right: 1px solid rgba(0, 0, 0, 0.05);
   padding: 2.5rem;
   width: 110px;
@@ -36,3 +37,4 @@
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
 }
+

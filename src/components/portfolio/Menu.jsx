@@ -9,6 +9,7 @@ const Data = [
     image: Work1,
     title: "Full Calendar and Schedular React Web Application",
     category: "Web1",
+    link:"https://mahdisrezaei2.github.io/Calendar-React-Project-1/",
   },
 
   {
@@ -16,6 +17,7 @@ const Data = [
     image: Work2,
     title: "Database Web Application for Real State Management ",
     category: "Database",
+    link:"https://realstatemanagementdatabase.netlify.app/",
   },
 
   {
@@ -23,6 +25,7 @@ const Data = [
     image: Work3,
     title: "To-Do List Web Application",
     category: "Web2",
+    link: "https://github.com/MahdisRezaei2/To-Do-React-Web-App"
   },
 
   {
@@ -30,6 +33,7 @@ const Data = [
     image: Work4,
     title: "Fitness Goal Tracker Web Application",
     category: "web3",
+    link:"https://github.com/jmhaiskar/Goal_Tracker.github.io"
   },
 ];
 

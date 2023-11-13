@@ -37,7 +37,7 @@ const filterItem = (categoryItem) => {
 
       <div className="work__container grid">
         {items.map((elem) => {
-          const{ id, image, title, category}= elem;
+          const{ id, image, title, category,link}= elem;
           return (
             <div className="work__card" key={id}>
               <div className="work__thumbnail">
@@ -47,7 +47,7 @@ const filterItem = (categoryItem) => {
 
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
-              <a href="https://mahdisrezaei2.github.io/Calendar-React-Project-1/" className="work__button">
+              <a href={link} target="_blank" rel="noreferrer" className="work__button">
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>

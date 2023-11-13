@@ -14,24 +14,31 @@
 
 .home__img {
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
     width: 450px;
-    
+    border-radius: 150px;
    
+}
+
+.home__education{
+    margin-bottom: 10rem;
 }
 
 .home__name {
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+    margin-top: -1rem;
 }
+
 
 .home__socials {
     display: flex;
    margin-top: 1.5rem;
    margin-left: 42%;
-   margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     column-gap: 2rem;
-    
+     margin-top: 0.2rem;
 }
 
 .home__social-link {
@@ -64,6 +71,7 @@
     margin-top: 0.75rem;
     border-radius: 1rem;
     position: relative;
+    margin-top: 0.5rem;
 }
 
 @keyframes ani-mouse {
@@ -91,8 +99,10 @@
     left: 50%;
     transform: translateX(-50%);
     animation: ani-mouse 2s linear infinite;
+   
 }
 
 .btn{
-    margin-bottom: 65px;
+    margin-bottom: 100px;
+    margin-top: -0.5rem;
 }
