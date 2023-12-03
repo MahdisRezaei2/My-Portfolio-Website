@@ -11,7 +11,7 @@ const Home = () => {
         <img src={Me} className="home__img" ></img>
         <h1 className="home__name">Mahdis Rezaei Tamijani</h1>
         <span className="home__education">
-          Recently Graduated with Associate degree in Computer Sience from
+          Recently Graduated with Associate degree in Computer Science from
           Langara College
         </span>
 
