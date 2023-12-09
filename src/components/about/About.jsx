@@ -3,7 +3,7 @@ import "./about.css";
 import Image from "../../assests/studio.png";
 import AboutBox from "./AboutBox";
 
-const PDF_FILE_URL = 'http://localhost:3001/Mahdis Rezaei Tamijani-Resume.pdf'
+const PDF_FILE_URL = '../../../build/Mahdis-Rezaei-Tamijani-Resume.pdf'
 const About = () => {
   const downloadFileAtURL= (url)=>{
        fetch(url).then(response=>response.blob()).then(blob=>{
@@ -34,6 +34,7 @@ const About = () => {
             <button className="btn" onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}}>
               Download CV
             </button>
+
           </div>
           <div className="about__skills grid">
             <div className="skills__data">
