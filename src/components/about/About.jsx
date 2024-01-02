@@ -3,21 +3,21 @@ import "./about.css";
 import Image from "../../assests/studio.png";
 import AboutBox from "./AboutBox";
 
-const PDF_FILE_URL = '../../../build/Mahdis-Rezaei-Tamijani-Resume.pdf'
+//const PDF_FILE_URL = '../../../build/Mahdis-Rezaei-Tamijani-Resume.pdf'
 const About = () => {
-  const downloadFileAtURL= (url)=>{
-       fetch(url).then(response=>response.blob()).then(blob=>{
-        const blobURL = window.URL.createObjectURL(new Blob([blob]));
-        const fileName = 'Mahdis Rezaei Tamijani-Resume.pdf';
-       const aTag = document.createElement('a');
-       aTag.href = blobURL;
-       aTag.setAttribute('download',fileName);
-       document.body.appendChild(aTag);
-       aTag.click();
-       aTag.remove();
-       })
+  // const downloadFileAtURL= (url)=>{
+  //      fetch(url).then(response=>response.blob()).then(blob=>{
+  //       const blobURL = window.URL.createObjectURL(new Blob([blob]));
+  //       const fileName = 'Mahdis Rezaei Tamijani-Resume.pdf';
+  //      const aTag = document.createElement('a');
+  //      aTag.href = blobURL;
+  //      aTag.setAttribute('download',fileName);
+  //      document.body.appendChild(aTag);
+  //      aTag.click();
+  //      aTag.remove();
+  //      })
        
-  }
+  // }
   return (
     <section className="about container section" id="about">
       <h2 className="section__title">About Me</h2>
@@ -31,9 +31,9 @@ const About = () => {
               skills in algorithm design, web development, and database
               management during my tenure at Langara College.
             </p>
-            <button className="btn" onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}}>
+            {/* <button className="btn" onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}}>
               Download CV
-            </button>
+            </button> */}
 
           </div>
           <div className="about__skills grid">
